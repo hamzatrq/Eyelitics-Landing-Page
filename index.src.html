@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Startup Responsive Landing page Template for startup, web services, newsletter signup, lead generation etc..">
+	<title>Eyelitics - People Counter | Retail Analytics | Customer Flow Heatmaps</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="css/style.css" rel="stylesheet">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+	<link rel="shortcut icon" href="images/favicon.html">
+
+	<script src="js/pace.js"></script>
+</head>
+
+<body class="subscribe-form">
+	<div class="preloader"></div>
+
+	<main id="top" class="masthead" role="main">
+		<div class="container">
+
+			<div class="logo"> <a href="#"><img src="images/readymade_logo.png" alt="readymade-logo"></a> </div>
+
+			<h1 class="main-title">Digital Analytics for the Retail World</h1>
+
+			<h4 class="sub-title">Our solution brings e-commerce style analytics to your physical locations.
+				Improve your business efficiency by understanding your visitor
+				activity and receiving automated recommendations.
+				It all starts here.</h4>
+
+			<div class="quick-features">
+				<div class="row has-margin-top-lg">
+					<div class="col-md-6">
+						<div class="featues-single"> <img src="images/tick.png" alt="tick" class="pull-left">
+							<h5>People Counting</h5>
+							<p>Measure the number of people passing by and customers entering your store</p>
+						</div>
+						<div class="featues-single"> <img src="images/tick.png" alt="tick" class="pull-left">
+							<h5>Customer Flow Heatmaps</h5>
+							<p>Increase customer engagement levels, optimize their path to purchase and raise your profits
+								substantially with Heatmaps.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="featues-single"> <img src="images/tick.png" alt="tick" class="pull-left">
+							<h5>Mood/Age/Gender Recognition</h5>
+							<p>Take real time action on your digital signage systems and in-store marketing campaigns according to
+								age, gender and emotions of your visitors.</p>
+						</div>
+						<div class="featues-single last"> <img src="images/tick.png" alt="tick" class="pull-left">
+							<h5>Dwell Zone Analytics</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="subscribe-block">
+						<div class="row">
+							<form class="form-horizontal" role="form"
+								action="https://demo.web3canvas.com/themeforest/readymade/subscribe.php" id="subscribeForm"
+								method="POST">
+								<div class="col-sm-4">
+									<input class="form-control input-lg" name="fname" id="fname" type="text" placeholder="Full Name"
+										required>
+								</div>
+								<div class="col-sm-4">
+									<input class="form-control input-lg" name="email" id="email" type="email" placeholder="Email ID"
+										required>
+								</div>
+								<div class="col-sm-4">
+									<button type="submit" class="btn btn-warning btn-block btn-lg">SUBSCRIBE NOW</button>
+								</div>
+							</form>
+						</div>
+						<span id="result" class="loading"></span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<a href="#explore" class="scrollto">
+			<p class="scrollto--arrow"><img src="images/down_arrow.png" alt="scroll down arrow"></p>
+		</a>
+
+	</main>
+
+
+
+
+	<main class="footercta" role="main">
+		<div class="container">
+
+			<div class="section-title">
+				<h2>Interested?</h2>
+				<h4>We will be launching our Beta version soon.<br>Subscribe to get updated once we launch!</h4>
+			</div>
+			<div class="row">
+			</div>
+		</div>
+	</main>
+
+
+	<div class="container">
+		<section class="row breath footercontent">
+			<div class="col-sm-4"> </div>
+			<div class="col-sm-4 madeby">
+				<p>© 2019 Eyelitics</p>
+			</div>
+			<div class="col-sm-4 copyinfo">
+			</div>
+		</section>
+
+	</div>
+
+
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/nicescroll.js"></script>
+	<script src="js/ketchup.all.js"></script>
+
+	<script>
+		$(function () {
+			$('.scrollto, .gototop').bind('click', function (event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+			});
+		});
+
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			$('#subscribeForm').ketchup().submit(function () {
+				if ($(this).ketchup('isValid')) {
+					var action = $(this).attr('action');
+					$("#result").fadeIn("slow").html("<p>Please wait...</p>");
+					$.ajax({
+						url: action,
+						type: 'POST',
+						data: {
+							email: $('#email').val(),
+							fname: $('#fname').val(),
+						},
+						success: function (data) {
+							$('#result').fadeIn('slow').html('<p class="text-success">Almost finished. Please check your email and verify.</p>').delay(3000).fadeOut('slow');
+						},
+						error: function () {
+							$('#result').fadeIn('slow').html('<p class="text-danger">Oops. Something went wrong</p>').delay(3000).fadeOut('slow');
+						}
+					});
+				}
+				return false;
+			});
+
+		});
+	</script>
+</body>
+
+</html>

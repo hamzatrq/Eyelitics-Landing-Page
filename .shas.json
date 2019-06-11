@@ -1,0 +1,135 @@
+[
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "index.html",
+        "sha": "3144a4bdda74b431a3e4208baee5e32df184f21e"
+      }
+    ],
+    "outputSha": "edd02e8e8183f9a6e1e2426789655ca492d347e6",
+    "input": "index.html",
+    "output": [
+      "index.html"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "images/favicon.html",
+        "sha": "67cb5da8f3dd68d2203a484b6108ed006928b679"
+      }
+    ],
+    "outputSha": "0de2bab2855bab6ce7d257c06a23cf5b978218bb",
+    "input": "images/favicon.html",
+    "output": [
+      "images/favicon.html"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "css/style.css",
+        "sha": "4b91d84266e9041cfd59368153b8b281d10b64c1"
+      }
+    ],
+    "outputSha": "6c9d3096ebdf8a17dee67de86451fc3b52e225ab",
+    "input": "css/style.css",
+    "output": [
+      "css/style.css.map",
+      "css/style.css"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "js/bootstrap.js",
+        "sha": "ffb1198cadfc6f3f87814c908f2d67712fe4ea19"
+      }
+    ],
+    "outputSha": "45f48b7940a02f566ba0972d2aab04b159bfa436",
+    "input": "js/bootstrap.js",
+    "output": [
+      "js/bootstrap.js.map",
+      "js/bootstrap.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "js/contact_form.js",
+        "sha": "0f672db5d7a5f67e04cfa25cf2e9547411cc223d"
+      }
+    ],
+    "outputSha": "31bfd08ec2c464f74187eb7bfc17aa6e468859e2",
+    "input": "js/contact_form.js",
+    "output": [
+      "js/contact_form.js.map",
+      "js/contact_form.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "js/easing.js",
+        "sha": "2fe84a0ea87ebd47aefa98e4367c2b57e6aff3a7"
+      }
+    ],
+    "outputSha": "b6fa1cd468bbf4cacabfcff456ee8b5d126ddec5",
+    "input": "js/easing.js",
+    "output": [
+      "js/easing.js.map",
+      "js/easing.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "js/jquery.js",
+        "sha": "3903b3fa707f28478b97e4e6ddb1536ed13ee732"
+      }
+    ],
+    "outputSha": "7cc41ff45991ecb967e66b35cac5934eadb9af16",
+    "input": "js/jquery.js",
+    "output": [
+      "js/jquery.js.map",
+      "js/jquery.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "js/nicescroll.js",
+        "sha": "e3a5eafb1284e3dd52397c377a69e821be484efb"
+      }
+    ],
+    "outputSha": "99a1aec76f3f612082b9effc681e7932893afbd9",
+    "input": "js/nicescroll.js",
+    "output": [
+      "js/nicescroll.js.map",
+      "js/nicescroll.js"
+    ]
+  },
+  {
+    "type": "::map::minify",
+    "inputSha": [
+      {
+        "file": "js/pace.js",
+        "sha": "3e7021a54f1825652568185d52ac2c3a2db3cae0"
+      }
+    ],
+    "outputSha": "6b814e78acc7207523184bf3d79052c907248dc7",
+    "input": "js/pace.js",
+    "output": [
+      "js/pace.js.map",
+      "js/pace.js"
+    ]
+  }
+]
